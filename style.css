@@ -53,3 +53,31 @@ body {
 .emph {
     color: #00589d;
 }
+
+.ex {
+    color: orange;
+}
+
+.code-block {
+    background-color: #D3D3D3;
+}
+
+.p {
+    color: purple;
+}
+
+.g {
+    color: green;
+}
+
+.r {
+    color: red;
+}
+
+.y {
+    color: #8B8000;
+}
+
+.pink {
+    color: #AA336A;
+}
