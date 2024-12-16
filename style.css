@@ -81,3 +81,15 @@ body {
 .pink {
     color: #AA336A;
 }
+
+.grey {
+    color: grey;
+}
+
+.wrong {
+    background-color: #F8766D;
+}
+
+.correct {
+    background-color: #80EF80;
+}

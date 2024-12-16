@@ -3,7 +3,7 @@ let x = document.cookie = ""
 
 if (document.cookie == undefined) {
   console.log("true")
-  document.cookie = `lessonsComplete=; expires Tue, 31 Dec 2024 12:00:00 UTC path=/Demo.html`
+  document.cookie = `lessonsComplete=; expires Wed, 15 Dec 2027 12:00:00 UTC path=/Demo.html`
 }
 
 
