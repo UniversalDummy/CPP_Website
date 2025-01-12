@@ -5,7 +5,6 @@ let index = [
     "of", "duty", "zombies", "cod"
 ]
 
-
 let about = [
     "bjarne", "stroustrup", "creator", "developer", "develop", "create", "created", "game", "games", "scientific",
     "computing", "computer", "embedded", "system", "system", "database", "driver", "drivers", "cpp", "c",
@@ -16,7 +15,8 @@ let about = [
 
 let demo = [
     "learn", "interactive", "interact", "learning", "fun", "create", "cpp", "cout", "cin", "user", "input", "output",
-    "data", "types", "type", "practice", "course", "demo", "courses", "demonstration", "lesson", "lessons"
+    "data", "types", "type", "practice", "course", "demo", "courses", "demonstration", "lesson", "lessons", "sample", 
+    "samples", "download", "content", "run", "exe", "windows", "files", "try", "out"
 ]
 
 let test = [
@@ -26,6 +26,9 @@ let test = [
     "data", "types", "type", "practice", "course", "demo", "courses", "demonstration", "lesson", "lessons"
 ]
 
+let EASTEREGG = [
+    "0evil_cpp1"
+]
 
 //Actaul processes
 let queryParams = new URLSearchParams(window.location.search);
@@ -74,6 +77,11 @@ for (i = 0; i < break_entry.length; i++) {
     for (a = 0; a < test.length; a++) {
         if (break_entry[i] == test[a]) {
             res.push("Tests-Tests-" + test[a] + "-")
+        }
+    }
+    for (a = 0; a < EASTEREGG.length; a++) {
+        if (break_entry[i] == EASTEREGG[a]) {
+            res.push("EasterEgg-What if instead of C++, it was evil C++?-SECERATECODE(" + EASTEREGG[a] + ")-")
         }
     }
 }
