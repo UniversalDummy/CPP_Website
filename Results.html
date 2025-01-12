@@ -3,7 +3,7 @@
 <html>
 
     <head>
-        <title>C++ | No Search Results</title>
+        <title>C++ | Search Results</title>
 
         <link rel="icon" type="image/x-icon" href="assets/C++_Logo.png">
 
@@ -20,7 +20,7 @@
 
     <body>
         <div>
-            <nav class="navbar navbar-expand-lg bg-dark navbar-dark MedText fixed-top">
+            <nav class="navbar navbar-expand-lg bg-dark navbar-dark MedText fixed-top text-center">
                 <div class="container-fluid p-3">
                     <a class="navbar-brand ps-4" href="index.html"><img class="img-fluid btnHover" style="width: 50px"
                             src="assets/C++_Logo.png"></a>
@@ -66,16 +66,16 @@
                                     </svg></a>
                             </li>
                         </ul>
-                        <div class="ms-auto">
-                            <form class="d-flex" role="search">
-                                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                                <button class="btn btn-outline-primary" type="submit"><svg
+                        <div class="ms-auto d-flex">
+                            
+                                <input id="srch" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                                <button class="btn btn-outline-primary" type="submit" onclick="searchDoc()"><svg
                                         xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                         class="bi bi-search" viewBox="0 0 16 16">
                                         <path
                                             d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
                                     </svg></button>
-                            </form>
+                            
                         </div>
                     </div>
                 </div>
@@ -87,20 +87,20 @@
     
         </div>
 
-        <div class="text-center">
-            <br>
-            <br>
-            <br>
 
-            <h1>
-                No results were found for what you searched
-            </h1>
-            
-            
+        <br>
+        <br>
+        <div class="container-fluid">
+            <h1 class="HUGE text-center">Results for: <span id="search"></span></h1>
+            <h3 class="text-center text-secondary"><span id="count"></span> result(s)</h3>
+            <hr class="border border-dark rounded">
 
-            <h5>
-                Try searching demos, information about C++, tests, and more from this website.
-            </h5>
+            <div id="contentSpace">
+                <ol id="result" class="list-group list-group-numbered p-5 m-auto">
+                    
+                    
+                </ol>
+            </div>
         </div>
         
 
@@ -114,6 +114,7 @@
         crossorigin="anonymous"></script>
 
         <script src="script.js"></script>
+        <script src="scripts/SEARCH.js"></script>
 
     </body>
 

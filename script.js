@@ -1,5 +1,11 @@
-let x = document.cookie = ""
+let TotalSources = 7
 
+let alphabet = [
+  'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q',
+  'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', ' ', '+'
+]
+
+let x = document.cookie = ""
 
 if (document.cookie == undefined) {
   console.log("true")
@@ -59,7 +65,7 @@ function checkCookie() {
 
 function clear_cooks() {
   var x;
-  if (confirm("Are you sure you would like to reset your lessons?") == true) {
+  if (confirm("Are you sure you would like to reset your lessons?")) {
       x = true;
   } else {
       x = false;
@@ -78,3 +84,31 @@ function Show_cooks() {
 
 
 checkCookie();
+
+function searchDoc() {
+ let entry = document.getElementById("srch").value;
+
+ let format = ""
+  for (i = 0; i < entry.length; i++) {
+    for (let a = 0; a < alphabet.length; a++) {
+      if (entry[i].toLowerCase() == alphabet[a]) {
+        if (entry[i] != '+') {
+          format += entry[i]
+        }
+        else {
+          format += 'p'
+        }
+      }
+    }
+  }
+
+ window.location.href = "Results.html?Search=" + format;
+}
+
+function srcHighlight(src) {
+  for (i = 0; i < TotalSources; i++) {
+    document.getElementById("src" + (i + 1)).classList.remove("bg-info")
+  }
+
+  document.getElementById("src" + src).classList.add("bg-info")
+}
