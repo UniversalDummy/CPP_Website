@@ -88,16 +88,52 @@
         </div>
 
 
-        <div class="text-center container-fluid">
-            <br>
-            <br>
+        <div class="container-fluid p-5 pb-0 text-center">
             <h1 class="HUGE">
-                This page is still under developement
-            </h1>
+                Tests
+            </h1> 
+            <h5>Test your knowledge on C++ with these tests.</h5>
+            <h6>(Test content based on Demo lesson content)</h6>
+            <h6>(None of these tests are certification level)</h6>   
+
             <hr>
-            <h1>
-                Check back to see the finished product
-            </h1>
+
+            <div class="dropdown">
+                <button class="btn btn-danger" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  WARNING - Cookie Use
+                </button>
+                <ul class="dropdown-menu bg-secondary text-light">
+                  <li class="ps-3 pe-3 pb-3">If you choose to do any of these tests, <br>you agree to letting us use cookies.</li>
+                  <li class="ps-3">It is important to note that these <br>cookies will be disposed of after <br> you close the <b>browser</b></li>
+                </ul>
+              </div>
+
+            <br>
+            <br>
+
+            <div class="row">
+
+                <div class="col-sm-4">
+                    <div id="EX1" class="card" style="width: 18rem;">
+                        <img src="assets/Concatinating cout C++.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Cout Unit Test</h5>
+                          <p class="card-text">This is the test for the first unit. You must have a <b>basic understanding</b> 
+                            on how to print things to the console in C++
+                          </p>
+                          <h6><b>Difficulty: <span class="text-primary">Easy</span></b></h6>
+                          <h6><b>Questions: 12</b></h6>
+                          <br>
+                          <button class="btn btn-primary" onclick="OpenToTests('A')">Begin Test</button>
+                          <hr>
+                          <h4 class="text-start">Score: <span id="EX1score" class="">--</span>%</h4>
+                        </div>
+                      </div>
+                </div>
+
+
+            </div>
+
         </div>
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"

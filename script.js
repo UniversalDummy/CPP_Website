@@ -1,10 +1,6 @@
 let TotalSources = 7
 
-let alphabet = [
-  'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q',
-  'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', ' ', '+', '_', '0', '1', '2', '3', '4', '5',
-  '6', '7', '8', '9'
-]
+let alphabet = "abcdefghijklmnopqrstuvwxyz +_0123456789".split('')
 
 let x = document.cookie = ""
 
@@ -19,6 +15,12 @@ let coutIntro = document.getElementById("IntroToCout");
 function OpenToLessons(type, number) {
     let url = 'LessonPage.html?LessonType=' + type + '&LessonNumber=' + number;
     window.location.href = url;
+
+}
+
+function OpenToTests(number) {
+  let url = 'TestingPage.html?Test=' + number;
+  window.location.href = url;
 
 }
 
@@ -49,7 +51,7 @@ function checkCookie() {
           lesson += completeLessons[i]
           console.log(lesson)
         }
-        else {
+        else if (completeLessons[i] == ",") {
           highlight.push(lesson);
           lesson = ""
         }
@@ -57,16 +59,54 @@ function checkCookie() {
     console.log(highlight);
 
     for (let i = 0; i < highlight.length; i++) {
-      document.getElementById(highlight[i]).classList.add("bg-success", "text-light")
-    }
-    
-    
+      if (!highlight[i].includes("_") && document.getElementById(highlight[i]) != null) {
+        document.getElementById(highlight[i]).classList.add("bg-success", "text-light")
+      }
+      else {
+        lesson = "";
 
+        for (a = 0; a < highlight[i].length; a++) {
+          if (highlight[i][a] != "_") {
+            lesson += highlight[i][a]
+          }
+          else {
+              console.log("ELEMENT EXISTS")
+              let score = "";
+              for (a = ++a; a < highlight[i].length; a++) {
+                score += highlight[i][a]
+              }
+              console.log(lesson + "score")
+              if (document.getElementById(lesson + "score") != null) {
+                if (parseInt(score) > parseInt('0' + document.getElementById(lesson + "score").innerText)) {
+                  document.getElementById(lesson + "score").innerText = score
+                }
+              }
+              if (document.getElementById(lesson) != null) {
+                document.getElementById(lesson).classList.add("text-light")
+                if (parseInt(score) >= 75) {
+                  document.getElementById(lesson).classList.remove("bg-danger")
+                  document.getElementById(lesson).classList.add("bg-success")
+                }
+                else {
+                  if (!document.getElementById(lesson).classList.contains("bg-success")) {
+                    document.getElementById(lesson).classList.add("bg-danger")
+                  }
+                }
+              }
+              break;
+            }
+          }
+        }
+
+        
+
+      }
 }
+
 
 function clear_cooks() {
   var x;
-  if (confirm("Are you sure you would like to reset your lessons?")) {
+  if (confirm("Are you sure you would like to reset your lessons? This will clear all progress on lessons AND tests.")) {
       x = true;
   } else {
       x = false;
@@ -112,4 +152,15 @@ function srcHighlight(src) {
   }
 
   document.getElementById("src" + src).classList.add("bg-info")
+}
+
+
+
+
+function DEL(lesson) {
+  let completeLessons = getCookie("lessonsComplete");
+
+    completeLessons += lesson += ",";
+
+    x = document.cookie = `lessonsComplete=${completeLessons}; expires Wed, 15 Dec 2027 12:00:00 UTC path=/Demo.html`;
 }

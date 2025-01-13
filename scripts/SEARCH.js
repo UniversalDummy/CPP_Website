@@ -10,7 +10,7 @@ let about = [
     "computing", "computer", "embedded", "system", "system", "database", "driver", "drivers", "cpp", "c",
     "program", "programming", "about", "world", "impact", "oop", "object", "oriented", "polymorphism", "class", "pointer",
     "method", "attribute", "encapsulation", "encapsulate", "inherit", "inheritance", "abstraction", "abstract", "learn",
-    "library", "libraries", "made", "make"
+    "library", "libraries", "made", "make", "what"
 ]
 
 let demo = [
@@ -20,7 +20,7 @@ let demo = [
 ]
 
 let test = [
-    "test", "knowledge", "quiz", "know",
+    "test", "knowledge", "quiz", "know", "tests", "testing", "quiz", "quizzes", "unit",
     //CONTENT FROM DEMO INCLUDED
     "learn", "interactive", "interact", "learning", "fun", "create", "cpp", "cout", "cin", "user", "input", "output",
     "data", "types", "type", "practice", "course", "demo", "courses", "demonstration", "lesson", "lessons"

@@ -184,3 +184,11 @@ body {
 .img_hover:hover {
     transform: rotate(10deg) scale(1.2);
 }
+
+.pointer {
+    cursor: pointer;
+}
+
+.strike {
+    text-decoration: line-through;
+}
