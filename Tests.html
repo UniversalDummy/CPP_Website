@@ -20,7 +20,7 @@
 
     <body>
         <div>
-            <nav class="navbar navbar-expand-lg bg-dark navbar-dark MedText fixed-top">
+            <nav class="navbar navbar-expand-lg bg-dark navbar-dark MedText fixed-top text-center">
                 <div class="container-fluid p-3">
                     <a class="navbar-brand ps-4" href="index.html"><img class="img-fluid btnHover" style="width: 50px"
                             src="assets/C++_Logo.png"></a>
@@ -66,16 +66,16 @@
                                     </svg></a>
                             </li>
                         </ul>
-                        <div class="ms-auto">
-                            <form class="d-flex" role="search">
-                                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                                <button class="btn btn-outline-primary" type="submit"><svg
+                        <div class="ms-auto d-flex">
+                            
+                                <input id="srch" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                                <button class="btn btn-outline-primary" type="submit" onclick="searchDoc()"><svg
                                         xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                         class="bi bi-search" viewBox="0 0 16 16">
                                         <path
                                             d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
                                     </svg></button>
-                            </form>
+                           
                         </div>
                     </div>
                 </div>
@@ -84,16 +84,57 @@
             <br>
             <br>
             <br>
-    
+            
         </div>
 
 
+        <div class="container-fluid p-5 pb-0 text-center">
+            <h1 class="HUGE">
+                Tests
+            </h1> 
+            <h5>Test your knowledge on C++ with these tests.</h5>
+            <h6>(Test content based on Demo lesson content)</h6>
+            <h6>(None of these tests are certification level)</h6>   
+
+            <hr>
+
+            <div class="dropdown">
+                <button class="btn btn-danger" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  WARNING - Cookie Use
+                </button>
+                <ul class="dropdown-menu bg-secondary text-light">
+                  <li class="ps-3 pe-3 pb-3">If you choose to do any of these tests, <br>you agree to letting us use cookies.</li>
+                  <li class="ps-3">It is important to note that these <br>cookies will be disposed of after <br> you close the <b>browser</b></li>
+                </ul>
+              </div>
+
+            <br>
+            <br>
+
+            <div class="row">
+
+                <div class="col-sm-4">
+                    <div id="EX1" class="card" style="width: 18rem;">
+                        <img src="assets/Concatinating cout C++.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Cout Unit Test</h5>
+                          <p class="card-text">This is the test for the first unit. You must have a <b>basic understanding</b> 
+                            on how to print things to the console in C++
+                          </p>
+                          <h6><b>Difficulty: <span class="text-primary">Easy</span></b></h6>
+                          <h6><b>Questions: 12</b></h6>
+                          <br>
+                          <button class="btn btn-primary" onclick="OpenToTests('A')">Begin Test</button>
+                          <hr>
+                          <h4 class="text-start">Score: <span id="EX1score" class="">--</span>%</h4>
+                        </div>
+                      </div>
+                </div>
 
 
+            </div>
 
-
-
-
+        </div>
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"

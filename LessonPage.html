@@ -3,7 +3,7 @@
 <html>
 
     <head>
-        <title>C++ | Tests</title>
+        <title id="title">C++ | </title>
 
         <link rel="icon" type="image/x-icon" href="assets/C++_Logo.png">
 
@@ -20,7 +20,7 @@
 
     <body>
         <div>
-            <nav class="navbar navbar-expand-lg bg-dark navbar-dark MedText fixed-top">
+            <nav class="navbar navbar-expand-lg bg-dark navbar-dark MedText fixed-top text-center">
                 <div class="container-fluid p-3">
                     <a class="navbar-brand ps-4" href="index.html"><img class="img-fluid btnHover" style="width: 50px"
                             src="assets/C++_Logo.png"></a>
@@ -66,16 +66,16 @@
                                     </svg></a>
                             </li>
                         </ul>
-                        <div class="ms-auto">
-                            <form class="d-flex" role="search">
-                                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                                <button class="btn btn-outline-primary" type="submit"><svg
+                        <div class="ms-auto d-flex">
+                            
+                                <input id="srch" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                                <button class="btn btn-outline-primary" type="submit" onclick="searchDoc()"><svg
                                         xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                         class="bi bi-search" viewBox="0 0 16 16">
                                         <path
                                             d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
                                     </svg></button>
-                            </form>
+                            
                         </div>
                     </div>
                 </div>
@@ -105,6 +105,9 @@
                 <div id="carouselExample" class="carousel slide">
                     <div class="carousel-inner">
                       <div class="carousel-item" id="1">
+
+
+                        <!--THIS IS LESSON A1-->
                         <h1 class="p-3">Introduction to <em>cout</em></h1>
                         <div class="row">
                           <div class="col-sm-7 ps-5">
@@ -129,9 +132,9 @@
                         <h1 class="p-3 text-end">Basics of <em>cout</em></h1>
                         <div class="row">
                           <div class="col-sm-5 ps-5 mx-auto">
-                            <img class="img-fluid" style="width: 500px" src="assets/iostream.jpg">                            
+                            <img class="img-fluid border border-dark" style="width: 500px" src="assets/iostream.jpg">                            
                           </div>
-                          <div class="col-sm-7 m-auto">
+                          <div class="col-sm-7 m-auto pe-5">
                             <h4 class="dyslexic-Efficient">
                               Cout comes from the <strong class="emph">iostream</strong> library. <strong class="emph">Libraries</strong> are groups of pre-compiled code that are used in 
                                multiple different programs. To use these libraries, you must include them at the top of your C++ file. The iostream library contains many more objects than
@@ -140,16 +143,493 @@
                           </div>
                         </div>
 
-                        <button type="button" class="btn btn-primary ms-auto">Submit</button>
+                        <br>
+                        <br>
+
+                        <h1 class="p-3 text-start">More on <em>cout</em></h1>
+                        <div class="row">
+                          <div class="col-sm-7 ps-5 mx-auto">
+                            <h4 class="dyslexic-Efficient">
+                              That's all for the introduction to cout! Click the submit button to continue onto the next lessons!
+                            </h4>                            
+                          </div>
+                          <div class="col-sm-5 m-auto">
+                            <div class="d-grid gap-2 mx-auto">
+                              <a href="Demo.html" class="mx-auto"><button class="btn btn-primary btn-lg border border-dark border-2" id="SubBtn1" type="button" onclick="cookLesson('A1')">SUBMIT LESSON</button></a>
+                            </div>
+                          </div>
+                        </div>
+
+                        
 
 
                       </div>
                       <div class="carousel-item" id="2">
-                        <img src="assets/C++ GIF.gif" class="d-block w-100" alt="...">
+                        <!--THIS IS LESSON A2-->
+                        <h1 class="p-3">Using <em>cout</em></h1>
+                        <div class="row">
+                          <div class="col-sm-7 ps-5">
+                            <h4 class="dyslexic-Efficient">
+                              As we've talked about in the last lesson, <em>cout</em> is <b>very important</b> to a program, and you'll <b>use it for many,
+                              many, many reasons!</b> From displaying text for the user to read all the way to displaying variables for <b>debugging a program.</b>
+                              So how can we use it? Well, lets look back at our image from the previous lesson and <b>really break down</b> that line of code!
+                            </h4>
+
+                            
+                          </div>
+                          <div class="col-sm-5 m-auto">
+                            <img class="img-fluid" style="width: 500px" src="assets/printHELLOWORLD.jpg">
+                          </div>
+                        </div>
+
+
+                        <br>
+                        <br>
+                        
+                        <h1 class="p-3 text-end">Breakdown of the line</h1>
+                        <div class="row">
+                          <div class="col-sm-5 ps-5 m-auto">
+                            <img class="img-fluid mx-auto" style="width: 500px" src="assets/cout line.png">                            
+                          </div>
+                          <div class="col-sm-7 m-auto">
+                            <h4 class="dyslexic-Efficient">
+                              Observe the line on the left. It may look a little scary and complex, but don't worry, it isn't at all!
+                            </h4>
+                          </div>
+                        </div>
+
+                        <br>
+                        <br>
+
+                        <h1 class="p-3 text-start">Breakdown of <em class="emph">std::</em></h1>
+                        <div class="row">
+                          <div class="col-sm-7 ps-5 m-auto">
+                            <h4 class="dyslexic-Efficient">
+                              Let's start with the <strong class="emph">std::</strong> part of this <em>cout</em> line. 
+                              Std in C++ means "Standard", and it represents <strong>the C++ standard library.</strong> 
+                              But wait! Then shouldn't it be <em>iostream::cout << "Hello World!";</em> because cout 
+                              is from the iostream library? Well, not exactly. 
+                              The reason that it is std:: and not iostream::is because std is something called a 
+                              <strong class="emph">namespace</strong>, while iostream is, as discussed in the last lesson, 
+                              a library. A <strong class="emph">namespace</strong> is essentially a box that holds all sorts of 
+                              variables, functions, etc. It helps keep things organized and easier to use. When we include the 
+                              iostream library inside of our file, we are fundamentally taking everything inside of the iostream 
+                              library and dumping it into the box, that box being the std namespace. As we just said earlier, 
+                              though, std <em>represents</em> the C++ standard library. That means that the namespace std holds 
+                              <em>everything</em> in the C++ standard library.
+                              
+                              <br>
+                              <br>
+                              
+                              Whew! That was a <em>lot</em> to grasp onto. Don't worry if you are struggling to understand 
+                              everything that was just said. We've just covered a lot that most other demos or courses wouldn't 
+                              usually cover within the first couple of lessons. 
+                            </h4>                       
+                          </div>
+                          <div class="col-sm-5 ps mx-auto text-end pe-5">
+                            <img class="img-fluid mx-auto" style="width: 300px" src="assets/cout line STD.jpg">
+                          </div>
+                        </div>
+
+                        <br>
+                        <br>
+
+                        <h1 class="p-3 text-end">Breakdown of <em class="emph">cout</em></h1>
+                        <div class="row">
+                          <div class="col-sm-5 ps-5 mx-auto">
+                            <img class="img-fluid mx-auto" style="width: 300px" src="assets/cout line COUT.jpg">                       
+                          </div>
+                          <div class="col-sm-7 mx-auto text-end pe-5">
+                            <h4 class="dyslexic-Efficient">
+                              Next up, we have the actual <strong class="emph">cout</strong> part of this <em>cout</em> line! 
+                              Cout, as stated in the last lesson, is an object of the iostream library. This is the actual thing 
+                              that will be printing the text to the console. There isn't much more to cover, since a lot of it
+                              was explained in the last lesson. So let's move onto the insertion operator!
+                            </h4>
+                          </div>
+                        </div>
+
+                        <br>
+                        <br>
+
+                        <h1 class="p-3 text-start">Breakdown of <em class="emph">Insertion Operator (<<)</em></h1>
+                        <div class="row">
+                          <div class="col-sm-7 ps-5 mx-auto">
+                            <h4 class="dyslexic-Efficient">
+                              Wait... what? Insertion operator? What the heck is that? Odd name, right? Well,
+                              the <strong class="emph">insertion operator</strong> is something used to give data to an output stream. 
+                              It is represented with two <em>less-than</em> symbols like this: <strong class="emph"><<</strong>. 
+                              This is <strong>mandatory for cout</strong> because this is how you actually give the text to cout. 
+                              Without it, you can't talk with cout and won't be able to send your text to it.
+                              <br>
+                              <br>
+                              One thing to be careful of while using the insertion operator, though, is not to mix it up with
+                              it's brother, the <strong class="emph">extraction operator</strong>. Similar to how you <em>give</em>
+                              data to cout through the insertion operator, the extraction operator allows you to <em>get</em> 
+                              or <em>recieve</em> data from something. It is what we use to get user input, which we will talk more about 
+                              in the next unit. The reason why we say to be careful of mixing these two up is because it is 
+                              represented with two <em>greater-than</em> symbols: <strong class="emph">>></strong>, which can become 
+                              easy to confuse with the insertion operator's two less-than symbols. Make sure you don't do this
+                              because you don't want to <em>take</em> data from cout, you want to <em>give</em> data to cout!
+                            </h4>             
+                          </div>
+                          <div class="col-sm-5 mx-auto text-end pe-5">
+                            <img class="img-fluid mx-auto" style="width: 300px" src="assets/cout line INSERT_OPP.jpg">
+                          </div>
+                        </div>
+
+                        <br>
+                        <br>
+
+                        <h1 class="p-3 text-end">Breakdown of the <em class="emph">input</em></h1>
+                        <div class="row">
+                          <div class="col-sm-5 ps-5 mx-auto">
+                            <img class="img-fluid mx-auto" style="width: 500px" src="assets/cout line TEXT.jpg">             
+                          </div>
+                          <div class="col-sm-7 mx-auto text-end pe-5">
+                            <h4 class="dyslexic-Efficient">
+                              Ah... Here it is! Here is the point in the line where what is in it 
+                              is what is printed out to the console. In this image on the left, we 
+                              have <em class="emph">Hello World!</em> in quotation marks. This is 
+                              <em>very</em> important to have these quotation marks because it is 
+                              what tells the program that it is a sentence or a group of multiple 
+                              characters. Whenever you want to print words or specific text out, 
+                              you must wrap it in quotes.
+                            </h4>
+                          </div>
+                        </div>
+
+                        <br>
+                        <br>
+
+                        <h1 class="p-3 text-start">Breakdown of the <em class="emph">semicolon</em></h1>
+                        <div class="row">
+                          <div class="col-sm-7 ps-5 mx-auto">
+                            <h4 class="dyslexic-Efficient">
+                             Finally! We reach the end of the line! The semicolon. Now, although it doesn't seem 
+                             like it does much, the semicolon is one of the most important things of <em>ANY</em> 
+                             C++ line, beyond the cout line. What the semicolon does is it marks the end of the line;
+                             Oops! Must have just put that one there by habit! But as you can see, it is similar to a 
+                             period in English. A period in English marks the end of a sentence so that a new one can 
+                             start. The program recognizes the semicolon and knows that it can stop reading the line 
+                             there as is.
+                            </h4>             
+                          </div>
+                          <div class="col-sm-5 mx-auto text-end pe-5">
+                            <img class="img-fluid mx-auto" style="width: 100px" src="assets/cout line SEMICOL.jpg">
+                          </div>
+                        </div>
+
+                        <br>
+                        <br>
+
+                        <h1 class="p-3 text-start">Wrap-Up</h1>
+                        <div class="row">
+                          <div class="col-sm-7 ps-5 mx-auto">
+                            <h4 class="dyslexic-Efficient">
+                              HOLY COW! We've covered a lot in this lesson. But, let's see what you have learned. 
+                              Remember, <strong class="ex">learning is not memorizing</strong>, it's <em><strong class="ex">understanding</strong></em>. 
+                              So, let's see if you <em>understand</em> the concepts from this lesson. Go ahead and try out  
+                              the exercise below!
+                            </h4>                            
+                          </div>
+                          <div class="col-sm-5 m-auto">
+                            <div class="d-grid gap-2 mx-auto">
+                              <img src="assets/Brain.png" class="img-fluid mx-auto" style="width: 300px">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="container-fluid ps-5 pe-5">
+                          <hr class="border border-dark border-2">
+                        </div>
+                        
+                        <div class="container-fluid">
+                          <h2 class="ps-5 pt-2"><u>Fill in the blanks to make the code work:</u></h2>
+                          <h6 class="pb-4 ps-5">Make the program print "Hello World!" when it is executed.</h6>
+                          <div class="border border-dark border-3 code-block p-5">
+                            <p class="p">#Include <span class="g">&ltiostream&gt</span></p>
+                            <br>
+                            <p class="r">int <span class="emph">main<span class="y">()</span></span> <span style="color: black">{</span></p>
+                              <label for="inputField2">|&nbsp&nbsp&nbsp&nbsp&nbsp</label>
+                              <input class="me-2" id="inputField2" type="text" name="inputField2" placeholder="//Type your line of code" aria-label="As a hint, think about a line that prints text to the terminal.">
+                              <p class="pink"><span style="color: black">|&nbsp&nbsp&nbsp&nbsp&nbsp</span>return <span class="emph">0</span><span style="color: black">;</span></p>
+                              <p>}</p>
+                              
+                            </div>
+                        </div>
+                        <div class="text-end p-3">
+                          <button class="btn btn-info text-end" id="showAnswerBtn2" type="button" onclick="show('inputField2', 0)">Show Answer</button>
+                          <button class="btn btn-primary btn-lg text-end" type="button" onclick="check('inputField2', 0)">Check Answer</button>
+                          
+                          <div class="text-start ps-5">
+                            <h3 id="result_h2" class=""></h3>
+                            <p id="result_p2" class=""></p>
+                            <img src="assets/Good Job From C++.jpg" class="img-fluid" id="TU2" style="width: 100px">
+                          </div>
+                            
+
+                          
+                        
+                        </div>
+                         
+
+                        <a href="Demo.html" class="mx-auto ps-5"><button class="btn btn-primary btn-lg border border-dark border-2" id="SubBtn2" type="button" onclick="cookLesson('A2')">SUBMIT LESSON</button></a>
                       </div>
                       <div class="carousel-item" id="3">
-                        <img src="assets/CPP Banner 1.webp" class="d-block w-100" alt="...">
+                        <!--THIS LESSON IS A3-->
+                        <h1 class="p-3">Debugging with <em>cout</em></h1>
+                        <div class="row">
+                          <div class="col-sm-7 ps-5">
+                            <h4 class="dyslexic-Efficient">
+                              Great job on that last lesson! It was a <em>lot</em> that we went over. Hopefully this lesson 
+                              will be a bit of a breather for you, since it's <b>pretty simple to understand</b> if you did 
+                              the last lesson. Remember how we mentioned that <em>cout</em> can be used for <b>debugging</b>? 
+                              Well, in this lesson, you'll learn all about how to use <em>cout</em> to debug your code!
+                            </h4>
+
+                            
+                          </div>
+                          <div class="col-sm-5 m-auto text-end pe-5">
+                            <img class="img-fluid border-dark border-bottom" style="width: 350px" src="assets/scared-bug.png">
+                          </div>
+                        </div>
+
+
+                        <br>
+                        <br>
+                        
+                        <h1 class="p-3 text-end">Variables</h1>
+                        <div class="row">
+                          <div class="col-sm-5 ps-5 mx-auto">
+                            <img class="img-fluid mx-auto" style="width: 450px" src="assets/variable_Representation.png">                            
+                          </div>
+                          <div class="col-sm-7 m-auto">
+                            <h4 class="dyslexic-Efficient pe-5">
+                              Variables are a <em><strong>HUGE</strong></em> part of programming. 
+                              <strong class="emph">Variables</strong> are things that store data and 
+                              can be changed. We won't get too much into variables now, but just remember 
+                              that image on the left, because you might see it again in a couple of units 
+                              (foreshadowing...). Observe that image, though. You can see a pink clump of 
+                              <strong class="ex"> data</strong>. Let's say for this example that that data 
+                              is a <strong class="ex">number</strong>, maybe <strong class="ex">4</strong>, as a random number. 
+                              Right now, <strong>that 4 isn't stored anywhere, meaning it's of no use to us.</strong> 
+                              But if we store that number somewhere, say in a <em><strong>variable</em></strong>, then we can 
+                              <strong>access it and manipulate it whenever we need to.</strong> That's why the image 
+                              shows <em>data</em> in the bucket that says <em>"variable"</em>. It represents us<strong> putting 
+                              our data </strong>into a <em>variable</em> to <strong>store it for later</strong>, whenever we need it. 
+                              You'll also see an arrow that is going from the inside of the bucket to the outside the bucket. That represents 
+                              how we access the data that is stored inside of our varaible, since we can take what's in 
+                              the bucket and change it or view it.
+                            </h4>
+                          </div>
+                        </div>
+
+                        <br>
+                        <br>
+
+                        <h1 class="p-3 text-start">Variables and <em>cout</em></h1>
+                        <div class="row">
+                          <div class="col-sm-7 ps-5 ">
+                            <h4 class="dyslexic-Efficient">
+                              Now that you know a little bit more about what variables are, lets talk 
+                              about how to <strong>actaully print them to the console</strong>. Look at the 
+                              image on the right. You'll see that it looks almost identical to the line that 
+                              we worked with last lesson (<em>std::cout&lt&lt "Hello World!";</em>). The only 
+                              difference here is that we aren't using <strong class="emph">quotation marks. </strong>
+                              Before, we wanted to type out a set of characters, <em>Hello World!</em> But now we 
+                              want to <strong>print out the value that the variable is <em>storing</em></strong>. 
+                              The reason why we don't use quotation marks is because C++, when it sees a pair of 
+                              quotation marks, will see what's inside of it <strong>as a set of characters</strong>. This means that 
+                              if we tried saying <em>std::cout&lt&lt "<strong class="ex">test</strong>";</em> with <strong class="ex">test</strong> 
+                              being the name of our variable, the program would <strong>print out the word <em>test</em></strong>. This is 
+                              not our goal though, since we are trying to print what is <em>inside</em> of test. So 
+                              instead we try typing <em>std::cout&lt&lt</em> <strong class="ex">test</strong>; and now 
+                              we have success! The program has printed out the value that <strong class="ex">test</strong> is storing. 
+                              <br>
+                              <br>
+                              Wow! Great job on reading all of this! Let's put your knowledge to the test now... complete 
+                              the exercise below to submit the lesson.
+                            </h4>                       
+                          </div>
+                          <div class="col-sm-5 text-end pe-5">
+                            <img class="img-fluid mx-auto" style="width: 400px" src="assets/Couting a variable.png">
+                          </div>
+                        </div>
+
+                        <br>
+                        <br>
+
+                        <div class="container-fluid ps-5 pe-5">
+                          <hr class="border border-dark border-2">
+                        </div>
+                        
+                        <div class="container-fluid">
+                          <h2 class="ps-5 pt-2"><u>Fill in the blanks to make the code work:</u></h2>
+                          <h6 class="pb-4 ps-5">Make the program print out the variable <em>score</em> when it is executed.</h6>
+                          <div class="border border-dark border-3 code-block p-5">
+                            <p class="p">#Include <span class="g">&ltiostream&gt</span></p>
+                            <br>
+                            <p class="r">int <span class="emph">main<span class="y">()</span></span> <span style="color: black">{</span></p>
+                              <p class="r"><span style="color: black">|&nbsp&nbsp&nbsp&nbsp&nbsp</span><span class="">int </span><span class="ex">score</span><span style="color: black">&nbsp=&nbsp0;</span><span></span><span class="grey">&nbsp&nbsp//This line right here is a line that declares a variable. We'll cover more on variables later.</span></p>
+                              <label for="inputField3">|&nbsp&nbsp&nbsp&nbsp&nbsp</label>
+                              <input class="me-2" id="inputField3" type="text" name="inputField3" placeholder="//Type your line of code" aria-label="As a hint, think about a line that prints text to the terminal.">
+                              <p class="pink"><span style="color: black">|&nbsp&nbsp&nbsp&nbsp&nbsp</span>return <span class="emph">0</span><span style="color: black">;</span></p>
+                              <p>}</p>
+                              
+                            </div>
+                        </div>
+                        <div class="text-end p-3">
+                          <button class="btn btn-info text-end" id="showAnswerBtn3" type="button" onclick="show('inputField3', 0)">Show Answer</button>
+                          <button class="btn btn-primary btn-lg text-end" type="button" onclick="check('inputField3', 0)">Check Answer</button>
+                          
+                          <div class="text-start ps-5">
+                            <h3 id="result_h3" class=""></h3>
+                            <p id="result_p3" class=""></p>
+                            <img src="assets/Good Job From C++.jpg" class="img-fluid" id="TU3" style="width: 100px">
+                          </div>
+                            
+
+                          
+                        
+                        </div>
+                         
+
+                        <a href="Demo.html" class="mx-auto ps-5"><button class="btn btn-primary btn-lg border border-dark border-2" id="SubBtn3" type="button" onclick="cookLesson('A3')">SUBMIT LESSON</button></a>
                       </div>
+                      <div class="carousel-item" id="4">
+
+
+                        <!--THIS IS LESSON A4-->
+                        <h1 class="p-3"><em>cout</em>ing multiple things</h1>
+                        <div class="row">
+                          <div class="col-sm-7 ps-5">
+                            <h4 class="dyslexic-Efficient">
+                              You've been doing a great job keeping up with all this info! But now 
+                              it's finally time to wrap up this unit. So for our last lesson, we are 
+                              going to cover the last couple of things you really <em>need</em> while 
+                              using <em>cout</em>. If you take a look at the image on the left, you'll 
+                              see a <em>Hello</em> and <em>Goodbye</em> message to a person named <em>John Doe</em>. 
+                              But what if <strong>we want the message to be for someone else</strong>? Say maybe someone named <em>Jane Doe</em>? 
+                              Well, instead of going in and changing the text inside of the quotation marks from <em>"Hello, John Doe!"</em> 
+                              to <em>"Hello, Jane Doe!"</em>, we can <strong>instead <em class="emph">concatenate</em> our cout line </strong>
+                              to say <em>Hello</em> to whatever name we set a variable to.
+                            </h4>
+
+                            
+                          </div>
+                          <div class="col-sm-5 m-auto text-end pe-5">
+                            <img class="img-fluid border-dark border-bottom" style="width: 350px" src="assets/Couting multiple things exe image.png">
+                          </div>
+                        </div>
+
+
+                        <br>
+                        <br>
+                        
+                        <h1 class="p-3 text-end emph">Concatenation</h1>
+                        <div class="row">
+                          <div class="col-sm-5 ps-5 mx-auto">
+                            <img class="img-fluid mx-auto" style="width: 300px" src="assets/Chain.png">                            
+                          </div>
+                          <div class="col-sm-7 m-auto">
+                            <h4 class="dyslexic-Efficient pe-5">
+                              <strong class="emph">Concatenating</strong> is a very powerful and useful 
+                              tool we can use with many things in C++. We're gonna try it with <em>cout</em>ing 
+                              in this lesson. <strong class="emph">Concatenation</strong> is when you take multiple 
+                              different things and put them all together to form one sequential thing, <strong>like a chain of links</strong>. 
+                              How do you think we can do this with the <em>cout</em> line in C++? If you said 
+                              adding <strong>multiple insertion operators (&lt&lt)</strong>, then you'd be correct! 
+                              By doing this, we can mix together printing out text (quotation marks) and variables (non-quotation marks). 
+                              How does that look, though? How would you write that <em>cout</em> line?
+                              
+                            </h4>
+                          </div>
+                        </div>
+
+                        <br>
+                        <br>
+
+                        <h1 class="p-3 text-start">Concatenating, <em>cout</em>ing, and the <strong class="emph">\n</strong></h1>
+                        <div class="row">
+                          <div class="col-sm-7 ps-5 ">
+                            <h4 class="dyslexic-Efficient">
+                              Well, the answer to that question is in the image on the left. Let's analyze it. 
+                              So it looks like we have a variable called <strong class="ex">name</strong>, and 
+                              it's storing the value <em>"John Doe".</em> Then in the next line we have our <em>cout </em>
+                              line that is printing out the phrase "Hello, " and then printing out the <strong class="ex">name</strong> 
+                              variable. Then we have another set of characters in the quotation marks at the end, which are "!\n". 
+                              This would result in: <em>Hello, John Doe!</em> Something that you probably noticed was that orange-tinted 
+                              <em>\n</em> piece. That <strong class="emph">\n</strong> piece stands for <strong>new line</strong>. It 
+                              has to be used in quotation marks, as well. The way that C++ sees the <em>\n</em> is as a line break, so 
+                              it starts a new line to continue printing things out to the console. This is very helpful because if you 
+                              had a couple of <em>cout</em> lines like this:
+                              <br>
+                              <br>
+                              <em>std::cout << "Hello";</em>
+                              <br>
+                              <em>std::cout << "World!";</em>
+                              <br>
+                              <br>
+                              Then the program would print <em>HelloWorld!</em> to the console. The reason is because there is 
+                              no <em>\n</em>, or line break. But if we typed:
+                              <br>
+                              <br>
+                              <em>std::cout << "Hello\n";</em>
+                              <br>
+                              <em>std::cout << "World!";</em>
+                              <br>
+                              <br>
+                              Then the program would print:
+                              <br>
+                              <br>
+                              <em>Hello</em>
+                              <br>
+                              <em>World!</em>
+                              <br>
+                              <br>
+                              Well, that's it for this unit. Go ahead and complete the exercise, do the unit test 
+                              and feel accomplished for the amazing work you've done!
+                            </h4>                       
+                          </div>
+                          <div class="col-sm-5 text-end pe-5">
+                            <img class="img-fluid mx-auto" style="width: 500px" src="assets/Concatinating cout C++.png">
+                          </div>
+                        </div>
+
+                        <br>
+                        <br>
+
+                        <div class="container-fluid ps-5 pe-5">
+                          <hr class="border border-dark border-2">
+                        </div>
+                        
+                        <div class="container-fluid">
+                          <h2 class="ps-5 pt-2"><u>Fill in the blanks to make the code work:</u></h2>
+                          <h6 class="pb-4 ps-5">Make the program print out "Your score is " and then the variable <em>score</em> when it is executed.</h6>
+                          <div class="border border-dark border-3 code-block p-5">
+                            <p class="p">#Include <span class="g">&ltiostream&gt</span></p>
+                            <br>
+                            <p class="r">int <span class="emph">main<span class="y">()</span></span> <span style="color: black">{</span></p>
+                              <p class="r"><span style="color: black">|&nbsp&nbsp&nbsp&nbsp&nbsp</span><span class="">int </span><span class="ex">score</span><span style="color: black">&nbsp=&nbsp0;</span></p>
+                              <label for="inputField4">|&nbsp&nbsp&nbsp&nbsp&nbsp</label>
+                              <input class="me-2" id="inputField4" type="text" name="inputField4" placeholder="//Type your line of code" aria-label="As a hint, think about a line that prints text to the terminal.">
+                              <p class="pink"><span style="color: black">|&nbsp&nbsp&nbsp&nbsp&nbsp</span>return <span class="emph">0</span><span style="color: black">;</span></p>
+                              <p>}</p>
+                              
+                            </div>
+                        </div>
+                        <div class="text-end p-3">
+                          <button class="btn btn-info text-end" id="showAnswerBtn4" type="button" onclick="show('inputField4', 0)">Show Answer</button>
+                          <button class="btn btn-primary btn-lg text-end" type="button" onclick="check('inputField4', 0)">Check Answer</button>
+                          
+                          <div class="text-start ps-5">
+                            <h3 id="result_h4" class=""></h3>
+                            <p id="result_p4" class=""></p>
+                            <img src="assets/Good Job From C++.jpg" class="img-fluid" id="TU4" style="width: 100px">
+                            
+                          </div>
+                      </div>
+                      <a href="Demo.html" class="mx-auto ps-5"><button class="btn btn-primary btn-lg border border-dark border-2" id="SubBtn4" type="button" onclick="cookLesson('A4')">SUBMIT LESSON</button></a>
                     </div>
                     <!--
                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
@@ -238,7 +718,7 @@
         <footer class="container-fluid p-0">           
           <nav class="navbar bg-dark">
               <div class="container-fluid">
-                  <a class="navbar-brand text-light" href="index.html">C++ &nbsp&nbsp| &nbsp&nbspProgramming Language</a>
+                  <a class="navbar-brand text-light" href="#">C++ &nbsp&nbsp| &nbsp&nbspProgramming Language</a>
                   <p class="ms-auto text-light">MrScriptDev 2024</p>
               </div>
           </nav>

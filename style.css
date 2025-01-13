@@ -8,12 +8,12 @@ body {
 
 .btnHover {
 
-    transition: transform .2s; /* Animation */
+    transition: transform .2s;
     margin: 0 auto;
 }
   
 .btnHover:hover {
-    transform: scale(1.3); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+    transform: scale(1.3);
 }
 
 .textBtnHover {
@@ -52,4 +52,143 @@ body {
 
 .emph {
     color: #00589d;
+}
+
+.ex {
+    color: orange;
+}
+
+.code-block {
+    background-color: #D3D3D3;
+}
+
+.p {
+    color: purple;
+}
+
+.g {
+    color: green;
+}
+
+.r {
+    color: red;
+}
+
+.y {
+    color: #8B8000;
+}
+
+.pink {
+    color: #AA336A;
+}
+
+.grey {
+    color: grey;
+}
+
+.wrong {
+    background-color: #F8766D;
+}
+
+.correct {
+    background-color: #80EF80;
+}
+
+.blur {
+    animation-duration: 1s;
+    animation-name: blur;
+    filter: blur(16px);
+}
+
+@keyframes unblur {
+    from {
+      filter: blur(16px);
+    }
+  
+    to {
+      filter: blur(0px);
+    }
+}
+
+@keyframes blur {
+    from {
+        filter: blur(0px);
+    }
+  
+    to {
+        filter: blur(16px);
+    }
+}
+
+.blur:hover {
+    animation-duration: 1s;
+    animation-name: unblur;
+    filter: blur(0px);
+}
+
+.background_color_CPP {
+    background-color: #00589d;
+}
+
+.no-blur {
+    filter:blur(0px);
+}
+
+.background_gif {
+    height: 1000px;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.box_btn {
+    animation-duration: 0.5s;
+    animation-name: graying;
+    filter: grayscale(1);
+    transition: transform .2s;
+}
+
+.box_btn:hover {
+    animation-duration: 0.5s;
+    animation-name: ungraying;
+    filter: grayscale(0);
+    transform: scale(1.08);
+}
+
+
+@keyframes graying {
+    from {
+      filter: grayscale(0);
+    }
+  
+    to {
+      filter: grayscale(1);
+    }
+}
+
+@keyframes ungraying {
+    from {
+        filter: grayscale(1)
+    }
+  
+    to {
+        filter: grayscale(0);
+    }
+}
+
+.img_hover {
+    transition: transform .2s;
+}
+
+.img_hover:hover {
+    transform: rotate(10deg) scale(1.2);
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.strike {
+    text-decoration: line-through;
 }

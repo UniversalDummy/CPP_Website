@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <title id="title">C++ | </title>
+
+        <link rel="icon" type="image/x-icon" href="assets/C++_Logo.png">
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+        <link rel="stylesheet" type="" href="style.css">
+
+        <link href='https://fonts.googleapis.com/css?family=Sour Gummy' rel='stylesheet'>
+    </head>
+
+
+
+
+    <body>
+        <div>
+            <nav class="navbar navbar-expand-lg bg-dark navbar-dark MedText fixed-top text-center">
+                <div class="container-fluid p-3">
+                    <a class="navbar-brand ps-4" href="index.html"><img class="img-fluid btnHover" style="width: 50px"
+                            src="assets/C++_Logo.png"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle-fill" viewBox="0 0 16 16">
+                            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3z"/>
+                          </svg>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ">
+                            <li class="nav-item">
+                                <a class="nav-link text-light ps-4 textBtnHover" aria-current="page"
+                                    href="index.html">Home <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                        fill="currentColor" class="bi bi-house-fill" viewBox="0 0 16 16">
+                                        <path
+                                            d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L8 2.207l6.646 6.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293z" />
+                                        <path d="m8 3.293 6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293z" />
+                                    </svg></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-light ps-4 textBtnHover" href="AboutCpp.html">About C++ <svg
+                                        xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-code-slash" viewBox="0 0 16 16">
+                                        <path
+                                            d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0m6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0" />
+                                    </svg></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-light ps-4 textBtnHover" href="Demo.html">Demo <svg
+                                        xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-box-fill" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M15.528 2.973a.75.75 0 0 1 .472.696v8.662a.75.75 0 0 1-.472.696l-7.25 2.9a.75.75 0 0 1-.557 0l-7.25-2.9A.75.75 0 0 1 0 12.331V3.669a.75.75 0 0 1 .471-.696L7.443.184l.004-.001.274-.11a.75.75 0 0 1 .558 0l.274.11.004.001zm-1.374.527L8 5.962 1.846 3.5 1 3.839v.4l6.5 2.6v7.922l.5.2.5-.2V6.84l6.5-2.6v-.4l-.846-.339Z" />
+                                    </svg></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-light active ps-4 textBtnHover" href="Tests.html">Tests <svg
+                                        xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-lightbulb-fill" viewBox="0 0 16 16">
+                                        <path
+                                            d="M2 6a6 6 0 1 1 10.174 4.31c-.203.196-.359.4-.453.619l-.762 1.769A.5.5 0 0 1 10.5 13h-5a.5.5 0 0 1-.46-.302l-.761-1.77a2 2 0 0 0-.453-.618A5.98 5.98 0 0 1 2 6m3 8.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1l-.224.447a1 1 0 0 1-.894.553H6.618a1 1 0 0 1-.894-.553L5.5 15a.5.5 0 0 1-.5-.5" />
+                                    </svg></a>
+                            </li>
+                        </ul>
+                        <div class="ms-auto d-flex">
+                            
+                                <input id="srch" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                                <button class="btn btn-outline-primary" type="submit" onclick="searchDoc()"><svg
+                                        xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-search" viewBox="0 0 16 16">
+                                        <path
+                                            d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+                                    </svg></button>
+                            
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <br>
+            <br>
+            <br>
+            <br>
+    
+        </div>
+
+
+        <div id="carouselExample" class="carousel slide">
+            <div class="carousel-inner">
+              <div class="carousel-item" id="A">
+                <div class="container-fluid text-dark">
+                    <br>
+                    <div class="row">
+                        <div class="text-center">
+                            <h1 class="HUGE">Cout Unit Test</h1>
+                            <h1>Please answer the following questions</h1>
+                            <hr>
+                            <br>
+                            <br>
+                        </div>
+                        <div class="col-sm-8 m-auto">
+                            <h4>1. Printing to the console in C++ is useful because: </h4>
+                            
+                            <ul id="A-1" class="list-group pointer">
+                                
+                                <li class="list-group-item" id="A-1-a" onclick="select('A-1-a', 'c', 3)">A. It helps with debugging</li>
+                                <li class="list-group-item" id="A-1-b" onclick="select('A-1-b', 'c', 3)">B. You can display text to the user</li>
+                                <li class="list-group-item" id="A-1-c" onclick="select('A-1-c', 'c', 3)">C. Both</li>
+                                
+                            </ul>
+                            <br>
+                            <br>
+                            <br>
+                            <h4>2. <b>std::</b> is a(n): </h4>
+                            
+                            <ul id="A-2" class="list-group pointer">
+                                <li class="list-group-item" id="A-2-a" onclick="select('A-2-a', 'b', 6)">A. keyword</li>
+                                <li class="list-group-item" id="A-2-b" onclick="select('A-2-b', 'b', 6)">B. namespace</li>
+                                <li class="list-group-item" id="A-2-c" onclick="select('A-2-c', 'b', 6)">C. data type</li>
+                                <li class="list-group-item" id="A-2-d" onclick="select('A-2-d', 'b', 6)">D. variable</li>
+                                <li class="list-group-item" id="A-2-e" onclick="select('A-2-e', 'b', 6)">E. library</li>
+                                <li class="list-group-item" id="A-2-f" onclick="select('A-2-f', 'b', 6)">F. object</li>
+                            </ul>
+                            <br>
+                            <br>
+                            <br>
+                            <h4>3. What library do you need to include in order to use <em>cout</em>?</h4>
+                            
+                            <ul id="A-3" class="list-group pointer">
+                                <li class="list-group-item" id="A-3-a" onclick="select('A-3-a', 'd', 4)">A. string</li>
+                                <li class="list-group-item" id="A-3-b" onclick="select('A-3-b', 'd', 4)">B. cmath</li>
+                                <li class="list-group-item" id="A-3-c" onclick="select('A-3-c', 'd', 4)">C. fstream</li>
+                                <li class="list-group-item" id="A-3-d" onclick="select('A-3-d', 'd', 4)">D. iostream</li>
+                            </ul>
+                            <br>
+                            <br>
+                            <br>
+                            <h4>4. What do you use to give data to <em>cout</em>?</h4>
+                            
+                            <ul id="A-4" class="list-group pointer">
+                                <li class="list-group-item" id="A-4-a" onclick="select('A-4-a', 'a', 2)">A. Insertion operator</li>
+                                <li class="list-group-item" id="A-4-b" onclick="select('A-4-b', 'a', 2)">B. Extraction operator</li>
+                            </ul>
+                            <br>
+                            <br>
+                            <br>
+                            <h4>5. What does the Insertion operator look like?</h4>
+                            
+                            <ul id="A-5" class="list-group pointer">
+                                <li class="list-group-item" id="A-5-a" onclick="select('A-5-a', 'a', 4)">A. &lt&lt</li>
+                                <li class="list-group-item" id="A-5-b" onclick="select('A-5-b', 'a', 4)">B. &gt&gt</li>
+                                <li class="list-group-item" id="A-5-c" onclick="select('A-5-c', 'a', 4)">C. ::</li>
+                                <li class="list-group-item" id="A-5-d" onclick="select('A-5-d', 'a', 4)">D. ""</li>
+                            </ul>
+                            <br>
+                            <br>
+                            <br>
+                            <h4>6. Why is a semicolon so important to a line of code in C++ (Specifically the <em>cout</em> line)?</h4>
+                            
+                            <ul id="A-6" class="list-group pointer">
+                                <li class="list-group-item" id="A-6-a" onclick="select('A-6-a', 'b', 3)">A. It tells the program to search through web serer databases</li>
+                                <li class="list-group-item" id="A-6-b" onclick="select('A-6-b', 'b', 3)">B. It tells the program where the line ends</li>
+                                <li class="list-group-item" id="A-6-c" onclick="select('A-6-c', 'b', 3)">C. Lines like this don't require semicolons</li>
+                            </ul>
+                            <br>
+                            <br>
+                            <br>
+                            <h4>7. Concatenating can best be compared to a...</h4>
+                            
+                            <ul id="A-7" class="list-group pointer">
+                                <li class="list-group-item" id="A-7-a" onclick="select('A-7-a', 'c', 4)">A. Rooster</li>
+                                <li class="list-group-item" id="A-7-b" onclick="select('A-7-b', 'c', 4)">B. Valance shell of electrons around an atom</li>
+                                <li class="list-group-item" id="A-7-c" onclick="select('A-7-c', 'c', 4)">C. Chain</li>
+                                <li class="list-group-item" id="A-7-d" onclick="select('A-7-d', 'c', 4)">D. House</li>
+                            </ul>
+                            <br>
+                            <br>
+                            <br>
+                            <h4>8. Which of the following would successfully print <em>Hello World!</em> to the console?</h4>
+                            
+                            <ul id="A-8" class="list-group pointer">
+                                <li class="list-group-item" id="A-8-a" onclick="select('A-8-a', 'd', 4)">A. std:cout &lt&lt Hello World!;</li>
+                                <li class="list-group-item" id="A-8-b" onclick="select('A-8-b', 'd', 4)">B. cout &gt&gt "Hello World!";</li>
+                                <li class="list-group-item" id="A-8-c" onclick="select('A-8-c', 'd', 4)">C. cout &lt&lt std::"Hello World!";</li>
+                                <li class="list-group-item" id="A-8-d" onclick="select('A-8-d', 'd', 4)">D. std::cout &lt&lt "Hello World!";</li>
+                            </ul>
+                            <br>
+                            <br>
+                            <br>
+                            <h4>9. Why do we need <b>quotation marks</b> when printing a word or phrase to the console?</h4>
+                            
+                            <ul id="A-9" class="list-group pointer">
+                                <li class="list-group-item" id="A-9-a" onclick="select('A-9-a', 'a', 3)">A. The quotation marks tell the program that it is a string of characters and not a variable, object or something else</li>
+                                <li class="list-group-item" id="A-9-b" onclick="select('A-9-b', 'a', 3)">B. It tells the program to make a line break after it prints the phrase</li>
+                                <li class="list-group-item" id="A-9-c" onclick="select('A-9-c', 'a', 3)">C. The formatting is nicer in your code, making it look pretty</li>
+                            </ul>
+                            <br>
+                            <br>
+                            <br>
+                            <h4>10. Why can <em>cout</em> be useful while debugging a program?</h4>
+                            
+                            <ul id="A-10" class="list-group pointer">
+                                <li class="list-group-item" id="A-10-a" onclick="select('A-10-a', 'd', 4)">A. It can print out the contents of variables at certain times</li>
+                                <li class="list-group-item" id="A-10-b" onclick="select('A-10-b', 'd', 4)">B. It can help you determine where run-time errors may be</li>
+                                <li class="list-group-item" id="A-10-c" onclick="select('A-10-c', 'd', 4)">C. It's quick and easy to add and remove from a program</li>
+                                <li class="list-group-item" id="A-10-d" onclick="select('A-10-d', 'd', 4)">D. All of the above</li>
+                            </ul>
+                            <br>
+                            <br>
+                            <br>
+                            <h4>11. How do you <em>cout</em> multiple things?</h4>
+                            
+                            <ul id="A-11" class="list-group pointer">
+                                <li class="list-group-item" id="A-11-a" onclick="select('A-11-a', 'b', 3)">A. You use a <b>\n</b></li>
+                                <li class="list-group-item" id="A-11-b" onclick="select('A-11-b', 'b', 3)">B. You use multiple insertion operators</li>
+                                <li class="list-group-item" id="A-11-c" onclick="select('A-11-c', 'b', 3)">C. You cannot perform this action</li>
+                            </ul>
+                            <br>
+                            <br>
+                            <br>
+                            <h4>12. <em>Cout</em> automatically line breaks for you whenever you use another insertion operator...</h4>
+                            
+                            <ul id="A-12" class="list-group pointer">
+                                <li class="list-group-item" id="A-12-a" onclick="select('A-12-a', 'b', 2)">A. True</li>
+                                <li class="list-group-item" id="A-12-b" onclick="select('A-12-b', 'b', 2)">B. False</li>
+                            </ul>
+                            <br>
+                            <br>
+                            <br>
+                        </div>
+                    </div>
+                    
+                </div>
+            
+              </div>
+              <div class="carousel-item" id="B">
+                
+
+              </div>
+              <div class="carousel-item" id="C">
+
+
+              </div>
+            </div>
+
+
+
+            <div class="row">
+                <div class="col-sm-6 m-auto text-center">
+                    <h1 class="big">
+                        Test Score: <span id="scorePrint">0%</span>
+                    </h1>
+                    <button class="btn btn-primary btn-lg border border-5 border-dark" onclick="cookTest()">
+                        Submit
+                    </button>
+                </div>
+            </div>
+
+          <!--
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>-->
+        </div>
+
+
+
+
+        <br>
+        <br>
+
+        <footer class="container-fluid p-0">           
+          <nav class="navbar bg-dark">
+              <div class="container-fluid">
+                  <a class="navbar-brand text-light" href="#">C++ &nbsp&nbsp| &nbsp&nbspProgramming Language</a>
+                  <p class="ms-auto text-light">MrScriptDev 2024</p>
+              </div>
+          </nav>
+      </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+        <script src="script.js"></script>
+
+        <script src="scripts/TestingPage.js"></script>
+
+    </body>
+
+
+</html>

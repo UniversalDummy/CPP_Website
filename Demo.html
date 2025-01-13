@@ -20,7 +20,7 @@
 
     <body>
         <div>
-            <nav class="navbar navbar-expand-lg bg-dark navbar-dark MedText fixed-top">
+            <nav class="navbar navbar-expand-lg bg-dark navbar-dark MedText fixed-top text-center">
                 <div class="container-fluid p-3">
                     <a class="navbar-brand ps-4" href="index.html"><img class="img-fluid btnHover" style="width: 50px"
                             src="assets/C++_Logo.png"></a>
@@ -66,16 +66,16 @@
                                     </svg></a>
                             </li>
                         </ul>
-                        <div class="ms-auto">
-                            <form class="d-flex" role="search">
-                                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                                <button class="btn btn-outline-primary" type="submit"><svg
+                        <div class="ms-auto d-flex">
+                            
+                                <input id="srch" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                                <button class="btn btn-outline-primary" type="submit" onclick="searchDoc()"><svg
                                         xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                         class="bi bi-search" viewBox="0 0 16 16">
                                         <path
                                             d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
                                     </svg></button>
-                            </form>
+                            
                         </div>
                     </div>
                 </div>
@@ -91,9 +91,21 @@
 
             <h1 class="HUGE">
                 Demos
-            </h1>    
+            </h1> 
+            <h5>Explore a library of interactive Demos and bite-sized mini lessons!</h5>   
 
             <hr>
+
+            <div class="dropdown">
+                <button class="btn btn-danger" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  WARNING - Cookie Use
+                </button>
+                <ul class="dropdown-menu bg-secondary text-light">
+                  <li class="ps-3 pe-3 pb-3">If you choose to do any of these lessons, <br>you agree to letting us use cookies.</li>
+                  <li class="ps-3">It is important to note that these <br>cookies will be disposed of after <br> you close the <b>browser</b></li>
+                </ul>
+              </div>
+            
 
         </div>
 
@@ -105,20 +117,28 @@
                     <strong>Printing To Console</strong>
                 </h1>
                 <ul class="list-group">
-                    <li id="IntroToCout" class="list-group-item d-flex">
+                    <li id="A1" class="list-group-item d-flex">
                         <p>Introduction to <em>cout</em></p>
                         
-                        <button type="button" class="btn btn-primary ms-auto" onclick="OpenToLessons('cout', 1)">Go to Lesson</button>
+                        <button type="button" class="btn btn-primary ms-auto" onclick="OpenToLessons('A', 1)">Go to Lesson</button>
                     </li>
-                    <li id="UsingCout" class="list-group-item d-flex">
+                    <li id="A2" class="list-group-item d-flex">
                         <p>Using <em>cout</em></p>
-                        <button type="button" class="btn btn-primary ms-auto" onclick="OpenToLessons('cout', 2)">Go to Lesson</button>
+                        <button type="button" class="btn btn-primary ms-auto" onclick="OpenToLessons('A', 2)">Go to Lesson</button>
                     </li>
-                    <li id="MoreAboutCout" class="list-group-item d-flex">
-                        <p>More about <em>cout</em></p>
-                        <button type="button" class="btn btn-primary ms-auto" onclick="OpenToLessons('cout', 3)">Go to Lesson</button>
+                    <li id="A3" class="list-group-item d-flex">
+                        <p>Debugging with <em>cout</em></p>
+                        <button type="button" class="btn btn-primary ms-auto" onclick="OpenToLessons('A', 3)">Go to Lesson</button>
                     </li>
-                    <li class="list-group-item active">Take the <em>cout</em> test</li>
+                    <li id="A4" class="list-group-item d-flex">
+                        <p><em>cout</em>ing multiple things</p>
+                        <button type="button" class="btn btn-primary ms-auto" onclick="OpenToLessons('A', 4)">Go to Lesson</button>
+                    </li>
+                    <li class="list-group-item d-flex active">
+                        Take the&nbsp<strong>unit test</strong>
+                        <a href="Tests.html" class="ms-auto"><button type="button" class="btn btn-light text-primary">Go to Tests</button></a>
+                    </li>
+                    
                   </ul>
             </div>
 
@@ -127,11 +147,11 @@
                     <strong>Getting User Input</strong>
                 </h1>
                 <ul class="list-group">
-                    <li class="list-group-item">An item</li>
-                    <li class="list-group-item">A second item</li>
-                    <li class="list-group-item">A third item</li>
-                    <li class="list-group-item">A fourth item</li>
-                    <li class="list-group-item">And a fifth one</li>
+                    <li class="list-group-item"><em>Coming Soon...</em></li>
+                    <li class="list-group-item"><em>Coming Soon...</em></li>
+                    <li class="list-group-item"><em>Coming Soon...</em></li>
+                    <li class="list-group-item"><em>Coming Soon...</em></li>
+                    <li class="list-group-item"><em>Coming Soon...</em></li>
                   </ul>
             </div>
 
@@ -140,19 +160,96 @@
                     <strong>Data Types</strong>
                 </h1>
                 <ul class="list-group">
-                    <li class="list-group-item">An item</li>
-                    <li class="list-group-item">A second item</li>
-                    <li class="list-group-item">A third item</li>
-                    <li class="list-group-item">A fourth item</li>
-                    <li class="list-group-item">And a fifth one</li>
+                    <li class="list-group-item"><em>Coming Soon...</em></li>
+                    <li class="list-group-item"><em>Coming Soon...</em></li>
+                    <li class="list-group-item"><em>Coming Soon...</em></li>
+                    <li class="list-group-item"><em>Coming Soon...</em></li>
+                    <li class="list-group-item"><em>Coming Soon...</em></li>
                   </ul>
             </div>
 
         </div>
 
 
-        <div class="">
+        <div class="text-center">
+            <button type="button" class="btn btn-warning btn-lg border border-dark border-3" onclick="clear_cooks()">Reset Progress</button>
+            <br>
+            <br>
+            <button type="button" class="btn btn-primary" onclick="Show_cooks()">Check Cookies</button>
+        </div>
+        
 
+        <div class="container-fluid p-5">
+            <div class="border border-dark border-5 bg-secondary rounded p-3 text-light">
+                <h1>Sample Files:</h1>
+                <h4>
+                    Wanna download some sample files to play around with?
+                    These bundles include windows executables and CPP files!
+                    (Free downloads, of course)
+                </h4>
+
+                <br>
+                <br>
+                <div class="row ps-3">
+                    <div class="col-sm-4">
+                        <h4><b>Hello World!</b></h4>
+                        <h5>
+                            Folder includes:
+                        </h5>
+                        <em>
+                        <ul>
+                            <li>
+                                Hello World! CPP sample file
+                            </li>
+                            <li>
+                                Hello world! Windows Executable
+                            </li>
+                        </ul>
+                        </em>
+                        <button class="btn btn-primary text-light border border-dark">
+                            Download Folder
+                        </button>
+                    </div>
+                    <div class="col-sm-4">
+                        <h4><b>Greeting User</b></h4>
+                        <h5>
+                            Folder includes:
+                        </h5>
+                        <em>
+                        <ul>
+                            <li>
+                                Greeting User CPP sample file
+                            </li>
+                            <li>
+                                Greeting User Windows Executable
+                            </li>
+                        </ul>
+                        </em>
+                        <button class="btn btn-primary text-light border border-dark">
+                            Download Folder
+                        </button>
+                    </div>
+                    <div class="col-sm-4">
+                        <h4><b>Simple 4 Function Calculator</b></h4>                        
+                        <h5>
+                            Folder includes:
+                        </h5>
+                        <em>
+                        <ul>
+                            <li>
+                                Simple 4 Function Calculator CPP sample file
+                            </li>
+                            <li>
+                                Simple 4 Function Calculator Windows Executable
+                            </li>
+                        </ul>
+                        </em>
+                        <button class="btn btn-primary text-light border border-dark">
+                            Download Folder
+                        </button>
+                    </div>
+                </div>
+            </div>
         </div>
 
 
